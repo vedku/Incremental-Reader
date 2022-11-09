@@ -25,10 +25,14 @@ struct ContentView: View {
                 }
             HStack{
                 Button("Increment!"){
-                    Mytext = ("Penis")
+                    Mytext = ("Incremented Text")
                 }
                 .padding()
+                Button("Revert!"){
+                    Mytext = ("Reverted Text")
+                }
             }
         }
         
-    }
+        }
+}

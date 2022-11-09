@@ -1,6 +1,4 @@
-def split(x):
-  separator = input("What separator do you want do split the text by? (period, comma, etc) \nInput separator here:")
-  return x.split(separator)
 txt = input("Input the text to be split:")
-splitted = split(txt)
+separator = input("What separator do you want do split the text by? (period, comma, etc) \nInput separator here:")
+splitted = txt.split(separator)
 print(splitted)

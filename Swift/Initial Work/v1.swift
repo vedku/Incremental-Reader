@@ -7,19 +7,18 @@ struct DefaultsKeys {
 
 struct ContentView: View {
     @State var Mytext = UserDefaults.standard.string(forKey: DefaultsKeys.keyOne) ?? "Edit this text here with the text to be incremented" 
-    @State var CountColor: Color = .black
-    @State var CountMax: Float = 280
+    @State var incrementedtext = []
     var body: some View {
         VStack{
             Text("**Incremental Reader**") 
-                .font(.system(.largeTitle, design: .monospaced)) //Font choice
+                .font(.system(.largeTitle, design: .monospaced))
             TextEditor(text: $Mytext)
                 .font(.system(.body, design: .monospaced))
                 .border(.mint) 
                 }
             HStack{
                 Button("Increment!"){
-                    Mytext = ("Incremented Text")
+                    incrementedtext = Mytext.components(separatedBy: ", ") 
                 }
                 .padding()
                 Button("Revert!"){

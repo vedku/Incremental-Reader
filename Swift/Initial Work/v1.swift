@@ -16,12 +16,6 @@ struct ContentView: View {
             TextEditor(text: $Mytext)
                 .font(.system(.body, design: .monospaced))
                 .border(.mint) 
-                .padding()
-                .onChange(of: Mytext) { 
-                    newValue in
-                    if Mytext.count > Int(CountMax) {
-                        CountColor = .red}
-                    else {CountColor = .black}
                 }
             HStack{
                 Button("Increment!"){
@@ -32,7 +26,5 @@ struct ContentView: View {
                     Mytext = ("Reverted Text")
                 }
             }
-        }
-        
         }
 }

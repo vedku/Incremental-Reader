@@ -1,5 +1,4 @@
-def increment(x):
-  return x.split()
-
-incremented = increment(input("Input:"))
-print(incremented)
+def split(x):
+  return x.split(".")
+splitted = split(input("Input:"))
+print(splitted)

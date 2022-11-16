@@ -1,8 +1,6 @@
 import time
-txt = ("John Paul Jones")
+txt = input("Input:")
 splitted = txt.split()
-print(splitted[0])
-time.sleep(5)
-print(splitted[1])
-time.sleep(5)
-print(splitted[2])
+for i in range(len(splitted)):
+    print(splitted[i])
+    time.sleep(2)

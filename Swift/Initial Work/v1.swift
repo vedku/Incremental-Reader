@@ -15,15 +15,15 @@ struct ContentView: View {
             TextEditor(text: $Mytext)
                 .font(.system(.body, design: .monospaced))
                 .border(.mint) 
-                }
-            HStack{
-                Button("Increment!"){
-                    incrementedtext = Mytext.components(separatedBy: ", ") 
-                }
-                .padding()
-                Button("Revert!"){
-                    Mytext = ("Reverted Text")
-                }
+        }
+        HStack{
+            Button("Increment!"){
+                Mytext = ("Inverted Text!")
+            }
+            .padding()
+            Button("Revert!"){
+                Mytext = ("Reverted Text")
             }
         }
+    }
 }

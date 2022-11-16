@@ -4,4 +4,4 @@ separator = input("Separator:")
 splitted = txt.split(separator)
 for i in range(len(splitted)):
     print(splitted[i])
-    time.sleep(2)
+    time.sleep(4)
